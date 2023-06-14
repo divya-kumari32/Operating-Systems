@@ -1,0 +1,47 @@
+PennOS Logs
+[0]	CREATED	1	-1	penn-shell 
+[0]	SCHEDULE	1	HIGH	penn-shell 
+[35]	CREATED	2	0	sleep 5 
+[35]	SCHEDULE	2	MEDIUM	sleep 5 
+ penn-shell 
+[35]	BLOCKED	2	0	sleep 5 
+[43]	UNBLOCKED	2	0	sleep 5 
+[43]	STOPPED	2	0	sleep 5 
+ penn-shell 
+[43]	SCHEDULE	1	HIGH	penn-shell 	
+[71]	CREATED	3	0	sleep 6 
+[71]	SCHEDULE	3	MEDIUM	sleep 6 
+ penn-shell 
+[71]	BLOCKED	3	0	sleep 6 
+[76]	UNBLOCKED	3	0	sleep 6 
+[76]	STOPPED	3	0	sleep 6 
+ penn-shell 
+[76]	SCHEDULE	1	HIGH	penn-shell 	
+[184]	CONTINUED	3	0	sleep 6 
+[184]	BLOCKED	3	0	sleep 6 
+[239]	UNBLOCKED	3	0	sleep 6 
+[239]	ZOMBIE	3	0	sleep 6 
+[239]	EXITED	3	0	sleep 6 0	
+[385]	CREATED	4	0	ps 
+[385]	SCHEDULE	4	MEDIUM	ps 
+ penn-shell 
+ penn-shell 
+[385]	SCHEDULE	1	HIGH	penn-shell 	
+[385]	EXITED	4	0	ps 
+[385]	EXITED	4	0	ps 0	
+[479]	CREATED	5	0	kill term 2 
+[479]	SCHEDULE	5	MEDIUM	kill term 2 
+ penn-shell 
+[479]	SIGNALED	2	0	sleep 5 
+[479]	CONTINUED	2	0	sleep 5 
+ penn-shell 
+[479]	SCHEDULE	1	HIGH	penn-shell 	
+[479]	EXITED	5	0	kill term 2 
+[479]	EXITED	5	0	kill term 2 0	
+[490]	CREATED	6	0	ps 
+[490]	SCHEDULE	6	MEDIUM	ps 
+ penn-shell 
+ penn-shell 
+[490]	SCHEDULE	1	HIGH	penn-shell 	
+[490]	EXITED	6	0	ps 
+[490]	EXITED	6	0	ps 0	
